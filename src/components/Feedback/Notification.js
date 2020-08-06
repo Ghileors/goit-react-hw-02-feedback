@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Notification = () => (
+const Notification = ({ message }) => (
     <>
-        <p>No feedback given</p>
+        <p>{message}</p>
     </>
 );
 
