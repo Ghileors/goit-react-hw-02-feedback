@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Button from './Button';
+
 import style from './Feedback.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
