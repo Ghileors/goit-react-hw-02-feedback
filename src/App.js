@@ -23,7 +23,7 @@ export default class App extends Component {
         return Math.round((this.state.good / this.countTotalFeedback()) * 100);
     }
 
-    handleClickButton = nameBtn => {
+    onLeaveFeedback = nameBtn => {
         this.setState({ [nameBtn]: this.state[nameBtn] + 1 });
     };
 
@@ -34,7 +34,7 @@ export default class App extends Component {
                 <Section title="Please leave feedback">
                     <FeedbackOptions
                         options={Object.keys(this.state)}
-                        onLeaveFeedback={this.handleClickButton}
+                        onLeaveFeedback={this.onLeaveFeedback}
                     />
                     <Statistics
                         good={good}
